@@ -1,0 +1,7 @@
+- provide(:title, "All Users")
+%h1 All Users
+= will_paginate @users, renderer: BootstrapPagination::Rails
+%ul.users
+  - @users.each do |user|
+    = render @users
+= will_paginate @users, renderer: BootstrapPagination::Rails
