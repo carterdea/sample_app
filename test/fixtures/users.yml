@@ -1,8 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   name: Carter De Angelis
-#   email: carterdea@gmail.com
+carter:
+  name: Carter De Angelis
+  email: carterdea@gmail.com
+  password_digest: <%= User.digest('password') %>
 
 # two:
 #   name: Chandler De Angelis

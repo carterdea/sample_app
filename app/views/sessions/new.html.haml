@@ -1,0 +1,15 @@
+- provide(:title, "Log In")
+%h1 Log In
+.row
+  .col-md-6.col-md-offset-3
+    = form_for(:session, url: login_path) do |f|
+      / = render 'shared/error_messages', object: @user
+      = f.label :email
+      = f.text_field :email, autofocus: true, class: 'form-control'
+      = f.label :password
+      = f.password_field :password, class: 'form-control'
+      = f.label :remember_me, class: "checkbox inline" do
+        = f.check_box :remember_me
+        %span Remember me
+      = f.submit "Log In", class: "btn btn-primary"
+    %p Already a user? #{link_to "Sign Up", signup_path}
