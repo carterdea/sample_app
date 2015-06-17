@@ -104,6 +104,7 @@ aside {
 }
 
 .gravatar {
+  border-radius: 5px;
   float: left;
   margin-right: 10px;
 }
@@ -226,7 +227,8 @@ input {
   .timestamp {
     color: $gray-light;
     display: block;
-    margin-left: 60px;
+    margin: 2px 0 0 60px;
+    font-size: 12px
   }
 
   .gravatar {
