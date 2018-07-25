@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',                  '4.2.1'
+gem 'rails',                  '4.2.10'
 gem 'haml'
 gem 'sass-rails',             '~> 5.0'
 gem 'bootstrap-sass',         '~> 3.2.0.0'
@@ -28,7 +28,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'sqlite3'
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.2'
   gem 'spring'
 end
 
@@ -41,5 +41,5 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma',           '~> 2.11.3'
+  gem 'puma',           '~> 3.12'
 end
