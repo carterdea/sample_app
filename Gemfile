@@ -1,20 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'rails',                  '4.2.10'
+gem 'rails', '6.1.7.1'
 gem 'haml'
-gem 'sass-rails',             '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 gem 'bootstrap-sass',         '~> 3.2.0.0'
 gem 'uglifier',               '>= 1.3.0'
-gem 'coffee-rails',           '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder',               '~> 2.0'
+gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 gem 'sdoc',                   '~> 0.4.0', group: :doc
 gem 'bcrypt',                 '~> 3.1.7'
 gem 'faker',                  '~> 1.4.3'
 gem 'will_paginate',          '~> 3.0.7'
 gem 'will_paginate-bootstrap','~> 1.0.1'
-gem 'carrierwave',            '~> 0.10.0'
+gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick',            '~> 3.8.0'
 gem 'fog',                    '~> 1.23.0'
 
@@ -28,7 +28,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'sqlite3'
   gem 'byebug'
-  gem 'web-console', '~> 3.2'
+  gem 'web-console', '~> 3.3', '>= 3.3.0'
   gem 'spring'
 end
 
