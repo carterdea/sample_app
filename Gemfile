@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'rails',                  '4.2.10'
+gem 'rails', '6.1.7.3'
 gem 'haml'
-gem 'sass-rails',             '~> 5.0'
-gem 'bootstrap-sass',         '~> 3.2.0.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
+gem 'bootstrap-sass', '~> 3.4.0.0'
 gem 'uglifier',               '>= 1.3.0'
-gem 'coffee-rails',           '~> 4.1.0'
-gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.2.2'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'turbolinks'
-gem 'jbuilder',               '~> 2.0'
-gem 'sdoc',                   '~> 0.4.0', group: :doc
+gem 'jbuilder', '~> 2.7', '>= 2.7.0'
+gem 'sdoc', '~> 1.0.0', group: :doc
 gem 'bcrypt',                 '~> 3.1.7'
 gem 'faker',                  '~> 1.4.3'
 gem 'will_paginate',          '~> 3.0.7'
 gem 'will_paginate-bootstrap','~> 1.0.1'
-gem 'carrierwave',            '~> 0.10.0'
-gem 'mini_magick',            '~> 3.8.0'
-gem 'fog',                    '~> 1.23.0'
+gem 'carrierwave', '~> 1.3.2'
+gem 'mini_magick', '~> 4.9.4'
+gem 'fog', '~> 1.23.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -25,10 +25,10 @@ gem 'fog',                    '~> 1.23.0'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'sqlite3'
   gem 'byebug'
-  gem 'web-console', '~> 3.2'
+  gem 'web-console', '~> 3.3', '>= 3.3.0'
   gem 'spring'
 end
 
@@ -41,5 +41,5 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma',           '~> 3.12'
+  gem 'puma', '~> 4.3', '>= 4.3.12'
 end
